@@ -41,6 +41,7 @@ public class OrderController {
     public EntityModel<Order> one(@PathVariable Long id) {
         Order order = orderRepository.findById(id)
                     .orElseThrow(() -> new OrderNotFoundException(id));
+
         return  assembler.toModel(order);
     }
 

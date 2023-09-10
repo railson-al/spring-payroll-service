@@ -46,7 +46,7 @@ class EmployeeController {
     // end::get-aggregate-root[]
 
 
-    // Create nem employeer
+    // Create new employer
     @PostMapping("/employees")
     ResponseEntity<?> newEmployee(@RequestBody Employee newEmployee) {
         
